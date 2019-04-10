@@ -11,6 +11,8 @@ Remove all instances of *OPENSSL_ia32cap_P* from *aesni-x86_64.pl*
 ```
 cd openssl-aesni
 
+chmod +x *.pl
+
 ./aesni-x86_64.pl aesni-x86_64.s
 
 gcc -march=sandybridge -c aesni-x86_64.s
